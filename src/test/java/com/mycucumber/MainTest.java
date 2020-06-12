@@ -1,16 +1,14 @@
 package com.mycucumber;
 
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 
 @CucumberOptions(
-        format = {"pretty", "json:target/cucumber.json", "html:target/html"},
+        plugin = {"pretty", "json:target/cucumber.json"},
         features = {"src/main/resources"},
         monochrome = true,
         glue = "com.mycucumber"
-//        tags = {"@myTests"}
 )
-public class Main extends AbstractTestNGCucumberTests{
+public class MainTest extends AbstractTestNGCucumberTests {
 }

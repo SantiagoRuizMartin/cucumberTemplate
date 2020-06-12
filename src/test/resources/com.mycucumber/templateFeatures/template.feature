@@ -4,7 +4,7 @@ Feature: template feature
     Given the background is ready
 
 
-  Scenario Outline:
+  Scenario Outline: This is my first scenario
     Given the <parameters> are ready
     And additional Step
     When The functionality is used
@@ -13,7 +13,7 @@ Feature: template feature
       | parameters |
       | parameter  |
 
-  Scenario Outline:
+  Scenario Outline: This is my second scenario
     Given the <parameters> are ready
     When The functionality is used
     Then The functionality should work
